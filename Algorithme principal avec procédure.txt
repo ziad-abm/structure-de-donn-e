@@ -1,0 +1,31 @@
+Algorithme verifier_orthogonalite_procedure
+    Déclarer n, taille, i, j : Entier
+    Déclarer v1, v2 : tableau de Réel
+    Déclarer ps : Réel
+
+    Écrire "Entrer le nombre de paires de vecteurs :"
+    Lire n
+
+    Écrire "Entrer la taille des vecteurs :"
+    Lire taille
+
+    Pour i de 1 à n faire
+        Écrire "Vecteur v1[", i, "]"
+        Pour j de 1 à taille faire
+            Lire v1[j]
+        Fin Pour
+
+        Écrire "Vecteur v2[", i, "]"
+        Pour j de 1 à taille faire
+            Lire v2[j]
+        Fin Pour
+
+        Appeler produit_scalaire(v1, v2, taille, ps)
+
+        Si ps = 0 Alors
+            Écrire "Les vecteurs ", i, " sont orthogonaux."
+        Sinon
+            Écrire "Les vecteurs ", i, " ne sont pas orthogonaux."
+        Fin Si
+    Fin Pour
+Fin Algorithme

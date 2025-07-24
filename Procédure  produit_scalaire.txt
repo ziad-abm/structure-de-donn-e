@@ -1,0 +1,6 @@
+Procédure produit_scalaire(v1: tableau de Réel, v2: tableau de Réel, taille: Entier, ps: Réel en sortie)
+    ps ← 0
+    Pour i de 1 à taille faire
+        ps ← ps + v1[i] * v2[i]
+    Fin Pour
+Fin Procédure
